@@ -19,9 +19,7 @@ export default function Home() {
           <SocialMedia />
         </div>
       </div>
-      <div className="MyPhoto">
-        <Image src={Me} alt="image" />
-      </div>
+      {/* <Image src={Me} alt="image" /> */}
     </div>
   );
 }

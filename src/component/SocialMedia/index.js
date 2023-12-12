@@ -8,25 +8,25 @@ import Linkedin from "../../../public/assets/linkedin.svg";
 const SocialMedia = () => {
   return (
     <div className="social-media">
-      <ul class="socialLinks">
+      <ul className="socialLinks">
         <li>
           <Link
             href="https://x.com/BoradDhruvesh?t=wRcjUXcjXD8gijdH-9hnug&s=08"
-            class="twitter"
+            className="twitter"
             target="_blank"
           >
             <Image src={Twitter} alt="twitter" />
           </Link>
         </li>
         <li>
-          <Link href="#" class="facebook">
+          <Link href="#" className="facebook">
             <Image src={Facebook} alt="facebook" />
           </Link>
         </li>
         <li>
           <Link
             href="https://www.instagram.com/d_j_borad/"
-            class="instagram"
+            className="instagram"
             target="_blank"
           >
             <Image src={Instagram} alt="instagram" />
@@ -35,7 +35,7 @@ const SocialMedia = () => {
         <li>
           <Link
             href="https://www.linkedin.com/in/dhruveshkumar-borad-680505214/"
-            class="linkedin"
+            className="linkedin"
             target="_blank"
           >
             <Image src={Linkedin} alt="linkedin" />
