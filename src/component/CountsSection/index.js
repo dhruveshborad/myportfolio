@@ -1,15 +1,10 @@
 const Counts = () => {
   return (
     <div className="counts container">
-      <div className="countsDetails">
+      <div className="row">
         <div className="col-lg-3 col-md-6">
           <div className="count-box">
-            <img
-              width="26"
-              height="26"
-              src="https://img.icons8.com/metro/26/18d26e/happy.png"
-              alt="happy"
-            />
+            <i className="bi bi-emoji-smile"></i>
             <span
               data-purecounter-start="0"
               data-purecounter-end="232"
@@ -24,12 +19,7 @@ const Counts = () => {
 
         <div className="col-lg-3 col-md-6 mt-5 mt-md-0">
           <div className="count-box">
-            <img
-              width="26"
-              height="26"
-              src="https://img.icons8.com/ios/50/18d26e/test-passed--v1.png"
-              alt="test-passed--v1"
-            />
+            <i className="bi bi-journal-richtext"></i>
             <span
               data-purecounter-start="0"
               data-purecounter-end="521"
@@ -44,12 +34,7 @@ const Counts = () => {
 
         <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div className="count-box">
-            <img
-              width="26"
-              height="26"
-              src="https://img.icons8.com/material-outlined/50/18d26e/online-support.png"
-              alt="online-support"
-            />
+            <i className="bi bi-headset"></i>
             <span
               data-purecounter-start="0"
               data-purecounter-end="1463"
@@ -64,12 +49,7 @@ const Counts = () => {
 
         <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div className="count-box">
-            <img
-              width="26"
-              height="26"
-              src="https://img.icons8.com/windows/50/18d26e/winners-medal.png"
-              alt="winners-medal"
-            />
+            <i className="bi bi-award"></i>
             <span
               data-purecounter-start="0"
               data-purecounter-end="24"
