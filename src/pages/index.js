@@ -1,25 +1,22 @@
 import HeaderNavbar from "@/component/HeaderNavbar";
 import SocialMedia from "@/component/SocialMedia";
-import Me from "../../public/assets/me.png";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="container">
-      <div className="titleDes">
-        <h1>DHRUVESH BORAD</h1>
-        <h3>
-          Experienced Full-stack Developer focused on React.js, skilled in
-          building scalable web applications with clean, maintainable code,
-          proficient in both front-end (React) and back-end (Node.js)
-          development for seamless user experiences.
-        </h3>
-        <div>
-          <HeaderNavbar />
-          <SocialMedia />
-        </div>
+    <header id="header" className="header">
+      <div className="container">
+        <h1>Dhruvesh B.</h1>
+        <h2>
+          I'm a Experienced <span>front end developer</span> focused <br />
+          on React.js and its frameworks. <br />
+          <span>skilled in building scalable</span> web applications with <br />
+          clean, maintainable code, proficient in both front-end (React)
+          <br /> and back-end (Handless CMS) development
+          <br /> for seamless user experiences.
+        </h2>
+        <HeaderNavbar />
+        <SocialMedia />
       </div>
-      {/* <Image src={Me} alt="image" /> */}
-    </div>
+    </header>
   );
 }
