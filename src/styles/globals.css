@@ -355,6 +355,39 @@ a {
   color: #18d26e;
 }
 
+section {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 140px;
+  bottom: 100%;
+  opacity: 0;
+  transition: ease-in-out 0.4s;
+  z-index: 2;
+}
+
+section.section-show {
+  top: 100px;
+  bottom: auto;
+  opacity: 1;
+  padding-bottom: 45px;
+}
+
+section .container {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  section {
+    top: 120px;
+  }
+
+  section.section-show {
+    top: 80px;
+  }
+}
+
 .titleDes {
   width: 50vw;
   margin-top: 20px;
@@ -374,39 +407,39 @@ a {
   }
 }
 
-.aboutMe .content h3 {
+.about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #18d26e;
 }
 
-.aboutMe .content ul {
+.about-me .content ul {
   list-style: none;
   padding: 0;
 }
 
-.aboutMe .content ul li {
+.about-me .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
-.aboutMe .content ul strong {
+.about-me .content ul strong {
   margin-right: 10px;
 }
 
-.aboutMe .content ul i {
+.about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
   color: #18d26e;
   line-height: 0;
 }
 
-.aboutMe .content p:last-child {
+.about-me .content p:last-child {
   margin-bottom: 0;
 }
 
-.sectionTitle h2 {
+.section-title h2 {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
@@ -418,7 +451,7 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
-.sectionTitle h2::after {
+.section-title h2::after {
   content: "";
   width: 120px;
   height: 1px;
@@ -427,7 +460,7 @@ a {
   margin: 4px 10px;
 }
 
-.sectionTitle p {
+.section-title p {
   margin: 0;
   margin: -15px 0 15px 0;
   font-size: 36px;

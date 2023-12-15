@@ -2,8 +2,8 @@ import Image from "next/image";
 import myPhoto from "../../../public/assets/photo.jpg";
 const MoreAbout = () => {
   return (
-    <div className="aboutMe container">
-      <div className="sectionTitle">
+    <div className="about-me container">
+      <div className="section-title">
         <h2>About</h2>
         <p>Learn more about me</p>
       </div>

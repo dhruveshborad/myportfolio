@@ -1,7 +1,7 @@
 const Intrusts = () => {
   return (
     <div className="interests container">
-      <div className="sectionTitle">
+      <div className="section-title">
         <h2>Interests</h2>
       </div>
 

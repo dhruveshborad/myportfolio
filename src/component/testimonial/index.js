@@ -26,7 +26,7 @@ const responsive = {
 const Testimonial = () => {
   return (
     <div className="testimonials container">
-      <div className="sectionTitle">
+      <div className="section-title">
         <h2>Testimonials</h2>
       </div>
       <div
