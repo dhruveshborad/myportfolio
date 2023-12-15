@@ -35,6 +35,7 @@ const HeaderNavbar = () => {
           </Link>
         </li>
       </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
   );
 };
