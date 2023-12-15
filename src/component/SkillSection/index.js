@@ -14,6 +14,7 @@ const Skills = () => {
             <div className="progress-bar-wrap">
               <div
                 className="progress-bar"
+                style={{ width: "100%" }}
                 role="progressbar"
                 aria-valuenow="100"
                 aria-valuemin="0"
@@ -29,6 +30,7 @@ const Skills = () => {
             <div className="progress-bar-wrap">
               <div
                 className="progress-bar"
+                style={{ width: "90%" }}
                 role="progressbar"
                 aria-valuenow="90"
                 aria-valuemin="0"
@@ -44,6 +46,7 @@ const Skills = () => {
             <div className="progress-bar-wrap">
               <div
                 className="progress-bar"
+                style={{ width: "75%" }}
                 role="progressbar"
                 aria-valuenow="75"
                 aria-valuemin="0"
@@ -65,6 +68,7 @@ const Skills = () => {
                 aria-valuenow="80"
                 aria-valuemin="0"
                 aria-valuemax="100"
+                style={{ width: "80%" }}
               ></div>
             </div>
           </div>
@@ -80,6 +84,7 @@ const Skills = () => {
                 aria-valuenow="90"
                 aria-valuemin="0"
                 aria-valuemax="100"
+                style={{ width: "90%" }}
               ></div>
             </div>
           </div>
@@ -91,6 +96,7 @@ const Skills = () => {
             <div className="progress-bar-wrap">
               <div
                 className="progress-bar"
+                style={{ width: "55%" }}
                 role="progressbar"
                 aria-valuenow="55"
                 aria-valuemin="0"

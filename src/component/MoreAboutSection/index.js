@@ -17,7 +17,7 @@ const MoreAbout = () => {
             A front-end developer builds the front-end portion of websites and
             web applications—the part users see and interact with.
           </p>
-          <div className="innerDetails">
+          <div className=" row">
             <div className="col-lg-6">
               <ul>
                 <li>
