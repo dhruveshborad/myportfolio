@@ -11,7 +11,7 @@ const Services = () => {
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="icon-box">
               <div className="icon">
-                <i class="bi bi-dribbble"></i>
+                <i className="bi bi-dribbble"></i>
               </div>
               <h4>
                 <a href="">Lorem Ipsum</a>
@@ -41,7 +41,7 @@ const Services = () => {
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div className="icon-box">
               <div className="icon">
-                <i class="bi bi-speedometer"></i>
+                <i className="bi bi-speedometer"></i>
               </div>
               <h4>
                 <a href="">Magni Dolores</a>
@@ -71,7 +71,7 @@ const Services = () => {
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div className="icon-box">
               <div className="icon">
-                <i class="bi bi-file-slides"></i>
+                <i className="bi bi-file-slides"></i>
               </div>
               <h4>
                 <a href="">Dele cardo</a>
@@ -86,7 +86,7 @@ const Services = () => {
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div className="icon-box">
               <div className="icon">
-                <i class="bi bi-box"></i>
+                <i className="bi bi-box"></i>
               </div>
               <h4>
                 <a href="">Divera don</a>

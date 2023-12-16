@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <header id="header" className="header">
       <div className="container">
-        <h1>Dhruvesh B.</h1>
+        <h1>DHRUVESH BORAD</h1>
         <h2>
           I'm a Experienced <span>front end developer</span> focused <br />
           on React.js and its frameworks. <br />
