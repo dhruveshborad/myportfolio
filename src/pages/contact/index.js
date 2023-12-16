@@ -1,6 +1,9 @@
+import ContactForm from "@/component/conectForm";
 import Link from "next/link";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 const Contact = () => {
+  const postUrl = process.env.MAILCHIMP_ENDPOINT;
   return (
     <section id="contact" className="contact section-show">
       <div className="container">
@@ -69,65 +72,39 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
-        <form
-          action="forms/contact.php"
-          method="post"
-          role="form"
-          className="php-email-form mt-4"
-        >
-          <div className="row">
-            <div className="col-md-6 form-group">
-              <input
-                type="text"
-                name="name"
-                className="form-control"
-                id="name"
-                placeholder="Your Name"
-                required
+        <MailchimpSubscribe
+          url={postUrl}
+          render={({ subscribe, status, message }) => {
+            console.log("status", status, message);
+            return(
+            <>
+              <ContactForm
+                status={status}
+                message={message}
+                subscribe={subscribe}
               />
-            </div>
-            <div className="col-md-6 form-group mt-3 mt-md-0">
-              <input
-                type="email"
-                className="form-control"
-                name="email"
-                id="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-          </div>
-          <div className="form-group mt-3">
-            <input
-              type="text"
-              className="form-control"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-              required
-            />
-          </div>
-          <div className="form-group mt-3">
-            <textarea
-              className="form-control"
-              name="message"
-              rows="5"
-              placeholder="Message"
-              required
-            ></textarea>
-          </div>
-          <div className="my-3">
-            <div className="loading">Loading</div>
-            <div className="error-message"></div>
-            <div className="sent-message">
-              Your message has been sent. Thank you!
-            </div>
-          </div>
-          <div className="text-center">
-            <button type="submit">Send Message</button>
-          </div>
-        </form>
+              <div className="mail-msg-text">
+                {status === "sending" && <span className="waiting" />}
+                {status === "error" && (
+                  <span
+                    className="error"
+                    dangerouslySetInnerHTML={{
+                      __html: String(message),
+                    }}
+                  />
+                )}
+                {status === "success" && (
+                  <span
+                    className="success"
+                    dangerouslySetInnerHTML={{
+                      __html: String(message),
+                    }}
+                  />
+                )}
+              </div>
+            </>
+          )}}
+        />
       </div>
     </section>
   );
