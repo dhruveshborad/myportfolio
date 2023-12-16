@@ -61,14 +61,19 @@ const Contact = () => {
             <div className="info-box">
               <i className=" info bi bi-envelope"></i>
               <h3>Email Me</h3>
-              <p>dhruveshborad007@gmail.com</p>
+
+              <Link href="https://dhruveshborad007@gmail.com">
+                <p>dhruveshborad007@gmail.com</p>
+              </Link>
             </div>
           </div>
           <div className="col-md-6 mt-4 d-flex align-items-stretch">
             <div className="info-box">
               <i className="info bi bi-telephone"></i>
               <h3>Call Me</h3>
-              <p>+91 7698342723</p>
+              <Link href={`tel:${+917698342723}`}>
+                <p>+91 76-983-42723</p>
+              </Link>
             </div>
           </div>
         </div>
@@ -76,34 +81,35 @@ const Contact = () => {
           url={postUrl}
           render={({ subscribe, status, message }) => {
             console.log("status", status, message);
-            return(
-            <>
-              <ContactForm
-                status={status}
-                message={message}
-                subscribe={subscribe}
-              />
-              <div className="mail-msg-text">
-                {status === "sending" && <span className="waiting" />}
-                {status === "error" && (
-                  <span
-                    className="error"
-                    dangerouslySetInnerHTML={{
-                      __html: String(message),
-                    }}
-                  />
-                )}
-                {status === "success" && (
-                  <span
-                    className="success"
-                    dangerouslySetInnerHTML={{
-                      __html: String(message),
-                    }}
-                  />
-                )}
-              </div>
-            </>
-          )}}
+            return (
+              <>
+                <ContactForm
+                  status={status}
+                  message={message}
+                  subscribe={subscribe}
+                />
+                <div className="mail-msg-text">
+                  {status === "sending" && <span className="waiting" />}
+                  {status === "error" && (
+                    <span
+                      className="error"
+                      dangerouslySetInnerHTML={{
+                        __html: String(message),
+                      }}
+                    />
+                  )}
+                  {status === "success" && (
+                    <span
+                      className="success"
+                      dangerouslySetInnerHTML={{
+                        __html: String(message),
+                      }}
+                    />
+                  )}
+                </div>
+              </>
+            );
+          }}
         />
       </div>
     </section>

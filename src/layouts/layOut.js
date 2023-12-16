@@ -24,7 +24,7 @@ const Layout = (props) => {
       />
       {router.pathname !== "/" && <Header block={"header"} />}
       {children ?? "look"}
-      {router.pathname !== "/" && <Footer block={"footer"} />}
+      {/* {router.pathname !== "/" && <Footer block={"footer"} />} */}
     </React.Fragment>
   );
 };
