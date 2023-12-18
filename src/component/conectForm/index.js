@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ContactForm = (props) => {
-  const { subscribe, status } = props;
+  const { subscribe } = props;
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
@@ -14,7 +14,9 @@ const ContactForm = (props) => {
     }
     subscribe({
       EMAIL: email,
-    //   message: message,
+      NAME: name,
+      SUBJECT: subject,
+      MESSAGE: message,
     });
     setEmail("");
     setName("");
