@@ -1,8 +1,10 @@
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
 import { NextSeo } from "next-seo";
+import { useRouter } from "next/router";
 import React from "react";
 const Layout = (props) => {
+  const router = useRouter();
   const { children } = props;
   return (
     <React.Fragment>
@@ -20,9 +22,9 @@ const Layout = (props) => {
         title={"front end developer"}
         description={"My portfolio"}
       />
-      <Header block={"header"} />
+      {router.pathname !== "/" && <Header block={"header"} />}
       {children ?? "look"}
-      <Footer block={"footer"} />
+      {/* {router.pathname !== "/" && <Footer block={"footer"} />} */}
     </React.Fragment>
   );
 };

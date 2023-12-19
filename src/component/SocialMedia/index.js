@@ -8,11 +8,11 @@ const SocialMedia = () => {
         className="twitter"
         target="_blank"
       >
-        <i class="bi bi-twitter"></i>
+        <i className="bi bi-twitter"></i>
       </Link>
 
       <Link href="#" className="facebook">
-        <i class="bi bi-facebook"></i>
+        <i className="bi bi-facebook"></i>
       </Link>
 
       <Link
@@ -20,7 +20,7 @@ const SocialMedia = () => {
         className="instagram"
         target="_blank"
       >
-        <i class="bi bi-instagram"></i>
+        <i className="bi bi-instagram"></i>
       </Link>
 
       <Link
@@ -28,7 +28,7 @@ const SocialMedia = () => {
         className="linkedin"
         target="_blank"
       >
-        <i class="bi bi-linkedin"></i>
+        <i className="bi bi-linkedin"></i>
       </Link>
     </div>
   );

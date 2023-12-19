@@ -1,6 +1,9 @@
+import ContactForm from "@/component/conectForm";
 import Link from "next/link";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 const Contact = () => {
+  const postUrl = process.env.MAILCHIMP_ENDPOINT;
   return (
     <section id="contact" className="contact section-show">
       <div className="container">
@@ -58,76 +61,56 @@ const Contact = () => {
             <div className="info-box">
               <i className=" info bi bi-envelope"></i>
               <h3>Email Me</h3>
-              <p>dhruveshborad007@gmail.com</p>
+
+              <Link href="https://dhruveshborad007@gmail.com">
+                <p>dhruveshborad007@gmail.com</p>
+              </Link>
             </div>
           </div>
           <div className="col-md-6 mt-4 d-flex align-items-stretch">
             <div className="info-box">
               <i className="info bi bi-telephone"></i>
               <h3>Call Me</h3>
-              <p>+91 7698342723</p>
+              <Link href={`tel:${+917698342723}`}>
+                <p>+91 76-983-42723</p>
+              </Link>
             </div>
           </div>
         </div>
-
-        <form
-          action="forms/contact.php"
-          method="post"
-          role="form"
-          className="php-email-form mt-4"
-        >
-          <div className="row">
-            <div className="col-md-6 form-group">
-              <input
-                type="text"
-                name="name"
-                className="form-control"
-                id="name"
-                placeholder="Your Name"
-                required
-              />
-            </div>
-            <div className="col-md-6 form-group mt-3 mt-md-0">
-              <input
-                type="email"
-                className="form-control"
-                name="email"
-                id="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-          </div>
-          <div className="form-group mt-3">
-            <input
-              type="text"
-              className="form-control"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-              required
-            />
-          </div>
-          <div className="form-group mt-3">
-            <textarea
-              className="form-control"
-              name="message"
-              rows="5"
-              placeholder="Message"
-              required
-            ></textarea>
-          </div>
-          <div className="my-3">
-            <div className="loading">Loading</div>
-            <div className="error-message"></div>
-            <div className="sent-message">
-              Your message has been sent. Thank you!
-            </div>
-          </div>
-          <div className="text-center">
-            <button type="submit">Send Message</button>
-          </div>
-        </form>
+        <MailchimpSubscribe
+          url={postUrl}
+          render={({ subscribe, status, message }) => {
+            console.log("status", status, message);
+            return (
+              <>
+                <ContactForm
+                  status={status}
+                  message={message}
+                  subscribe={subscribe}
+                />
+                <div className="mail-msg-text">
+                  {status === "sending" && <span className="waiting" />}
+                  {status === "error" && (
+                    <span
+                      className="error"
+                      dangerouslySetInnerHTML={{
+                        __html: String(message),
+                      }}
+                    />
+                  )}
+                  {status === "success" && (
+                    <span
+                      className="success"
+                      dangerouslySetInnerHTML={{
+                        __html: String(message),
+                      }}
+                    />
+                  )}
+                </div>
+              </>
+            );
+          }}
+        />
       </div>
     </section>
   );
