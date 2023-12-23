@@ -30,6 +30,13 @@ const SocialMedia = () => {
       >
         <i className="bi bi-linkedin"></i>
       </Link>
+      <Link
+        href="https://github.com/dhruveshborad"
+        className="github"
+        target="_blank"
+      >
+        <i className="bi bi-github"></i>
+      </Link>
     </div>
   );
 };
