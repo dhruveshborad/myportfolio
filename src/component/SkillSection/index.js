@@ -59,7 +59,7 @@ const Skills = () => {
         <div className="col-lg-6">
           <div className="progress">
             <span className="skill">
-              PHP <i className="val">80%</i>
+              React.Js / Next.Js <i className="val">80%</i>
             </span>
             <div className="progress-bar-wrap">
               <div
@@ -75,7 +75,7 @@ const Skills = () => {
 
           <div className="progress">
             <span className="skill">
-              WordPress/CMS <i className="val">90%</i>
+              Handless CMS <i className="val">90%</i>
             </span>
             <div className="progress-bar-wrap">
               <div
@@ -91,7 +91,7 @@ const Skills = () => {
 
           <div className="progress">
             <span className="skill">
-              Photoshop <i className="val">55%</i>
+              Python <i className="val">55%</i>
             </span>
             <div className="progress-bar-wrap">
               <div
