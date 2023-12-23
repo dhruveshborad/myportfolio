@@ -43,8 +43,12 @@ const Contact = () => {
                 >
                   <i className="bi bi-instagram"></i>
                 </Link>
-                <Link href="#" className="google-plus" target="_blank">
-                  <i className="bi bi-skype"></i>
+                <Link
+                  href="https://github.com/dhruveshborad"
+                  className="google-plus"
+                  target="_blank"
+                >
+                  <i className="bi bi-github"></i>
                 </Link>
                 <Link
                   href="https://www.linkedin.com/in/dhruveshkumar-borad-680505214/"

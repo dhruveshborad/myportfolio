@@ -15,7 +15,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/ios/50/ffbb2c/online-store.png"
               alt="online-store"
             />
-            <h3>Lorem Ipsum</h3>
+            <h3>E-com/Shopify</h3>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
@@ -30,7 +30,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/pastel-glyph/64/5578ff/bar-chart--v2.png"
               alt="bar-chart--v2"
             />
-            <h3>Dolor Sitema</h3>
+            <h3>HighCharts/ApexChart</h3>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
@@ -45,7 +45,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/pulsar-line/26/e80368/tear-off-calendar.png"
               alt="tear-off-calendar"
             />
-            <h3>Sed perspiciatis</h3>
+            <h3>Query/GraphQL</h3>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 mt-4 mt-lg-0">
@@ -57,7 +57,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/pastel-glyph/26/e361ff/paint-brush.png"
               alt="paint-brush"
             />
-            <h3>Magni Dolores</h3>
+            <h3>Tailwind/Scss</h3>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 mt-4">
@@ -69,7 +69,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/ios/26/47aeff/database--v1.png"
               alt="database--v1"
             />
-            <h3>Nemo Enim</h3>
+            <h3>PostgraSQL/SQL</h3>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 mt-4">
@@ -81,7 +81,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/fluency-systems-filled/48/ffa76e/chatgpt.png"
               alt="chatgpt"
             />
-            <h3>Eiusmod Tempor</h3>
+            <h3>ChatGPT/OpenAI</h3>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 mt-4">
@@ -93,7 +93,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/metro/26/11dbcf/document.png"
               alt="document"
             />
-            <h3>Midela Teren</h3>
+            <h3>Documentation</h3>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 mt-4">
@@ -105,7 +105,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/pastel-glyph/26/4233ff/price-tag--v2.png"
               alt="price-tag--v2"
             />
-            <h3>Pira Neve</h3>
+            <h3>MetaTag/SEO</h3>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 mt-4">
@@ -117,7 +117,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/26/b2904f/external-anchor-travel-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png"
               alt="external-anchor"
             />
-            <h3>Dirada Pack</h3>
+            <h3>Custom Hook</h3>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 mt-4">
@@ -129,7 +129,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/ios/50/b20969/yandex-music.png"
               alt="yandex-music"
             />
-            <h3>Moton Ideal</h3>
+            <h3>Material UI</h3>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 mt-4">
@@ -144,7 +144,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/ios-glyphs/26/ff5828/radio-tower.png"
               alt="radio-tower"
             />
-            <h3>Verdo Park</h3>
+            <h3>Communication</h3>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 mt-4">
@@ -156,7 +156,7 @@ const Intrusts = () => {
               src="https://img.icons8.com/ios/50/29cc61/fingerprint--v1.png"
               alt="fingerprint--v1"
             />
-            <h3>Flavor Nivelanda</h3>
+            <h3>Security</h3>
           </div>
         </div>
       </div>

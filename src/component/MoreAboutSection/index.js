@@ -45,7 +45,7 @@ const MoreAbout = () => {
                     src="https://img.icons8.com/ios-filled/50/18d26e/forward--v1.png"
                     alt="forward--v1"
                   />{" "}
-                  <strong>Phone:</strong> <span>+91 7698342723</span>
+                  <strong>Phone:</strong> <span>+91 76-983-42723</span>
                 </li>
                 <li>
                   <img
@@ -54,7 +54,7 @@ const MoreAbout = () => {
                     src="https://img.icons8.com/ios-filled/50/18d26e/forward--v1.png"
                     alt="forward--v1"
                   />{" "}
-                  <strong>City:</strong> <span>Gujarat, India</span>
+                  <strong>City:</strong> <span>Surat, India</span>
                 </li>
               </ul>
             </div>
@@ -101,12 +101,27 @@ const MoreAbout = () => {
             </div>
           </div>
           <p>
+            <img
+              className="quote-icon-left"
+              width="26"
+              height="26"
+              src="https://img.icons8.com/fluency-systems-filled/26/18d26e/quote-left.png"
+              alt="quote-left"
+            />
+            {"  "}
             As a Computer Engineer, I prioritize staying informed and
             continually expanding my knowledge to ensure success in my field. My
             academic background and practical experience serve as the foundation
             for adapting to the dynamic nature of technology, allowing me to
             contribute effectively to the ever-evolving landscape of computer
-            engineering.
+            engineering.{" "}
+            <img
+              className="quote-icon-left"
+              width="26"
+              height="26"
+              src="https://img.icons8.com/fluency-systems-filled/26/18d26e/quote-right.png"
+              alt="quote-right"
+            />
           </p>
         </div>
       </div>

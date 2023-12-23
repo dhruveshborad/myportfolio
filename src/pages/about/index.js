@@ -1,5 +1,5 @@
 import Counts from "@/component/CountsSection";
-import Intrusts from "@/component/CountsSection/IntrustsSection";
+import Intrusts from "@/component/IntrustsSection";
 import MoreAbout from "@/component/MoreAboutSection";
 import Skills from "@/component/SkillSection";
 import Testimonial from "@/component/testimonial";
