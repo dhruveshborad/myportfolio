@@ -1211,6 +1211,15 @@ section .container {
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
 }
- .react-multi-carousel-dot .react-multi-carousel-dot--active button{
+
+.react-multi-carousel-dot .react-multi-carousel-dot--active button {
   background-color: #18d26e;
+}
+
+.DownloadBtn {
+  background: #18d26e;
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px 30px;
+  font-size: medium;
 }

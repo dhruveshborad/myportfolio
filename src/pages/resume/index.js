@@ -1,3 +1,8 @@
+import { saveAs } from "file-saver";
+const downloadResume = () => {
+  console.log("first");
+  saveAs("./assets/Resume.pdf", "Dhruvesh Borad Resume.pdf");
+};
 const Resume = () => {
   return (
     <section id="resume" className="resume section-show">
@@ -5,6 +10,13 @@ const Resume = () => {
         <div className="section-title">
           <h2>Resume</h2>
           <p>Check My Resume</p>
+          <button
+            type="button"
+            className="btn-sm DownloadBtn"
+            onClick={() => downloadResume()}
+          >
+            Resume <i className="bi bi-download" />
+          </button>
         </div>
         <div className="row">
           <div className="col-lg-6">
@@ -20,7 +32,7 @@ const Resume = () => {
 
               <ul>
                 <li>VOCADORS TECHNOLOGIES PVT LTD</li>
-                <li>(123) 456-7891</li>
+                {/* <li>(123) 456-7891</li> */}
                 <li>JALPESHPANCHAL71@GMAIL.COM</li>
               </ul>
             </div>
@@ -30,23 +42,26 @@ const Resume = () => {
               <h4>S.S.C. &amp; High School</h4>
               <h5>2017 - 2018</h5>
               <p>Aashadeep vidhyalaya-2, Surat, Guj</p>
-              <p>
+              {/* <p>
                 Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam
                 iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti
                 nerada porti sand markend
-              </p>
+              </p> */}
             </div>
             <div className="resume-item">
               <h4>H.S.C &amp; High School</h4>
               <h5>2018 - 2020</h5>
               <p>Ashadeep IIT, Surat, Guj</p>
-              <p>
+              {/* <p>
                 Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
                 reiciendis et quis Eius vel ratione eius unde vitae rerum
                 voluptates asperiores voluptatem Earum molestiae consequatur
                 neque etlon sader mart dila
-              </p>
+              </p> */}
             </div>
+            {/* <div className="DownloadBtn">
+              
+            </div> */}
           </div>
           <div className="col-lg-6">
             <h3 className="resume-title">Professional Experience</h3>
@@ -58,10 +73,11 @@ const Resume = () => {
               </p>
               <ul>
                 <li>
-                  Lead in the design, development, and implementation of the
-                  graphic, layout, and production communication materials
+                  Coming Soon...
+                  {/* Lead in the design, development, and implementation of the
+                  graphic, layout, and production communication materials */}
                 </li>
-                <li>
+                {/* <li>
                   Delegate tasks to the 7 members of the design team and provide
                   counsel on all aspects of the project.{" "}
                 </li>
@@ -72,7 +88,7 @@ const Resume = () => {
                 <li>
                   Oversee the efficient use of production project budgets
                   ranging from $2,000 - $25,000
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="resume-item">
@@ -84,7 +100,7 @@ const Resume = () => {
 
               <ul>
                 <li>
-                  I have 1+ year of experience at Codage Habitation. During my
+                  I have 1.5+ year of experience at Codage Habitation. During my
                   tenure, I handled numerous front-end projects where I
                   maintained code quality and ensured the development of
                   responsive websites.
