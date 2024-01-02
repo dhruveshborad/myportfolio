@@ -15,6 +15,7 @@ const HeaderNavbar = (props) => {
           <Link
             className={`nav-link ${router.pathname === "/" ? "active" : ""}`}
             href="/"
+            onClick={() => setMenuBarActive(false)}
           >
             Home
           </Link>
@@ -25,6 +26,7 @@ const HeaderNavbar = (props) => {
               router.pathname === "/about" ? "active" : ""
             }`}
             href="/about"
+            onClick={() => setMenuBarActive(false)}
           >
             About
           </Link>
@@ -35,6 +37,7 @@ const HeaderNavbar = (props) => {
               router.pathname === "/resume" ? "active" : ""
             }`}
             href="/resume"
+            onClick={() => setMenuBarActive(false)}
           >
             Resume
           </Link>
@@ -45,6 +48,7 @@ const HeaderNavbar = (props) => {
               router.pathname === "/services" ? "active" : ""
             }`}
             href="/services"
+            onClick={() => setMenuBarActive(false)}
           >
             Services
           </Link>
@@ -55,6 +59,7 @@ const HeaderNavbar = (props) => {
               router.pathname === "/portfolio" ? "active" : ""
             }`}
             href="/portfolio"
+            onClick={() => setMenuBarActive(false)}
           >
             Portfolio
           </Link>
@@ -65,6 +70,7 @@ const HeaderNavbar = (props) => {
               router.pathname === "/contact" ? "active" : ""
             }`}
             href="/contact"
+            onClick={() => setMenuBarActive(false)}
           >
             Contact
           </Link>
@@ -76,7 +82,7 @@ const HeaderNavbar = (props) => {
             ? "bi mobile-nav-toggle bi-x"
             : "bi bi-list mobile-nav-toggle"
         }`}
-        onClick={()=>setMenuBarActive(!menuBarActive)}
+        onClick={() => setMenuBarActive(!menuBarActive)}
       ></i>
     </nav>
   );
